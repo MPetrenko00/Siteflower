@@ -20,13 +20,27 @@
 			<a href="#" class="header-logo">
 				<img src="images/logo.svg" alt="logo" width="155" height="39">
 			</a>
-			<ul class="header-menu">
-				<li><a href="#">Главная</a></li>
-				<li><a href="#">О Нас</a></li>
-				<li><a href="#">Как мы работаем</a></li>
-				<li><a href="#">Наши работи</a></li>
-				<li><a href="#">Контакти</a></li>
-			</ul>
+	
+			<label for="toggler"><i class="fa fa-bars"></i></label>
+			<input type="checkbox" id="toggler" name="">
+			
+			<div class="menu">
+				<ul class="header-menu">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">О Нас</a></li>
+					<li><a href="#">Как мы работаем</a></li>
+					<li><a href="#">Наши работи</a></li>
+					<li><a href="#">Контакти</a></li>
+				</ul>
+			</div>
+
+
+			<div class="burger">
+				<span></span>
+			</div>
+			
+	
+	
 		</div>
 	</header>
 
@@ -173,28 +187,46 @@
 				</div>
 				<div class="footer-social">
 					<h3>Мы в соц. сетях</h3>
-				 <!--<ul>
-						<li>
-							<a href="#">
-								<img src="images/telegram.jpg" alt="telegram">
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="images/inst.jpg" alt="telegram">
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="images/viber.jpg" alt="telegram">
-							</a>
-						</li>
-				</ul> -->
+					<div class=" icon-down">
+						<ul class=" block">
+							<li>
+								<a href="#">
+									<svg href="#" class="icon">
+										<use href="images/sprite.svg#facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg href="#" class="icon">
+										<use href="images/sprite.svg#inst"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg href="#" class="icon">
+										<use href="images/sprite.svg#link"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<p class="footer-year">(c)2023</p>
 		</div>
 	</footer>
+
+
+
+	<script>
+
+		document.querySelector('.burger').addEventListener('click', function() 
+		{ this.classList.toggle('active'); 
+		document.querySelector('.menu').classList.toggle("open");
+	    })
+		</script>
 </body>
 
 </html>
