@@ -611,9 +611,65 @@ body {
     .box img {
         flex: 1 1 30%;
     }
+    
+  /*_____________________________________*/
+
+
+    .text-center {
+        text-align: center;
+    }
+    
+    .text-left {
+        text-align: left;
+    }
+    
+    .section-cards h1 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    
+    .section-cards h1+p {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+    
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        padding: 0 0 30px;
+    
+    }
+    
+    .card {
+        background: #81A36B;
+        font-size: 12px;
+        width: 33%;
+        padding: 10px 10px 30px;
+    
+    }
+    
+    .card-text {
+        padding: 12px;
+    }
+    
+    
+    .link-image {
+        display: block;
+        height: 200px;
+    }
+    
+    .link-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
 
 
 }
+
+
 
 
 @media screen and (max-width: 650px) {
@@ -634,10 +690,13 @@ body {
     }
 
     .card-item img {
-        max-width: 100px;
+        max-width: 50px;
     }
 
 }
+
+
+
 
 @media screen and (max-width: 350px) {
     .header-menu {
@@ -653,7 +712,7 @@ body {
 
 
     .flower-image img {
-        height: 100px;
+        height: 50%;
         flex: 1 1 20%;
     }
 
