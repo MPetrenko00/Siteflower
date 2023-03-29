@@ -455,7 +455,6 @@ body {
 
     .header-menu {
         display: flex;
-        position: fixed;
         width: 100%;
     }
 
@@ -523,6 +522,7 @@ body {
 
 
 
+    /*_____________________________________*/
 
 
     .button-1 {
@@ -537,6 +537,37 @@ body {
         padding: 10px 10px;
         font-size: 16px;
         border: 0;
+    }
+
+    /*_____________________________________*/
+
+    .flower-image {
+        height: 100%;
+    }
+
+    .flower-image_2 {
+        height: 100%;
+    }
+
+    .flower-image_2 img {
+        flex: 1 1 50%;
+        height: 300px;
+        width: 420px;
+        object-fit: scale-down;
+    }
+
+    .text-2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        padding: 0 0 60px;
+    }
+    
+    
+    .text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
     }
 
 }
